@@ -1,3 +1,5 @@
 class LeaseSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :rent
+  has_one :apartment
+  has_one :tenant
 end
