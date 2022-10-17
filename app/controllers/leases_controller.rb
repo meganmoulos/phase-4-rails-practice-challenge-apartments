@@ -1,7 +1,11 @@
 class LeasesController < ApplicationController
 
     def create
-        lease = Lease.create(lease_params)
+        lease = Lease.create!(lease_params)
+    end
+
+    def destroy
+        
     end
 
     private
